@@ -151,7 +151,7 @@ export default function BadgeGenerator() {
         { text: generated.norm,   x: 100, y: 192, size: 16, color: "#2549d3", align: "center" },
         { text: `Gültig bis:`,              x: 100, y: 220, size: 11, color: "#1e293b", align: "center" },
         { text: generated.validUntil,       x: 100, y: 234, size: 11, color: "#1e293b", align: "center" },
-        { text: `ID ${generated.id.slice(0,8)}…`, x: 100, y: 255, size: 9,  color: "#475569", align: "center" },
+        { text: `ID ${generated.id}`, x: 100, y: 255, size: 7.5, color: "#475569", align: "center" },
       ],
     });
     downloadPNG(url, filename(generated.id, generated.norm, "vertikal.png"));
